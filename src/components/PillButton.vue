@@ -15,7 +15,7 @@ div {
   font-family: 'Outfit';
   letter-spacing: 2px;
   user-select: none;
-  @apply uppercase font-semibold;
+  @apply uppercase font-semibold bg-black;
 }
 
 div:hover {
@@ -35,7 +35,7 @@ div:active {
 }
 
 .secondary {
-  @apply border-2 border-secondary;
+  @apply border-2 border-secondary bg-transparent;
 }
 
 .secondary:active {

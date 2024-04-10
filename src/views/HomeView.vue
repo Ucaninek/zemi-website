@@ -3,6 +3,7 @@ import PillButton from '@/components/PillButton.vue'
 import ShapeSeven from '@/components/shapes/ShapeSeven.vue'
 import ShapeEight from '@/components/shapes/ShapeEight.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
+import ReviewCard from '@/components/ReviewCard.vue'
 </script>
 
 <template>
@@ -49,9 +50,26 @@ import ProjectCard from '@/components/ProjectCard.vue'
     </section>
     <section class="highlighted-projects">
       <h2>highlighted projects</h2>
-      <ProjectCard title="Hello World"
-        >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
+      <div class="projects-grid">
+        <ProjectCard title="Hello World"
+          >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
+        >
+      </div>
+    </section>
+    <section class="reviews">
+      <h2>reviews</h2>
+      <h3>Read What Others Have To Say</h3>
+      <ReviewCard author="Wheatley"
+        >I wish I could take it all back. I honestly do. I honestly do wish I could take it all
+        back. And not just 'cause I'm stranded in space.</ReviewCard
       >
+    </section>
+    <section class="call-to-action">
+      <div class="contact-card">
+        <p>ready to turn ideas into reality?</p>
+        <h2>Let's Stop Scrolling And Start Creating</h2>
+        <PillButton>contact me</PillButton>
+      </div>
     </section>
   </main>
 </template>

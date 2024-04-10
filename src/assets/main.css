@@ -51,10 +51,26 @@ section .divider h2 {
   @apply grid grid-cols-4;
 }
 
-section > h2 {
+section > h2,
+.contact-card p {
   font-family: 'Outfit';
   letter-spacing: 2px;
   @apply uppercase font-bold text-lg;
+}
+
+.contact-card {
+  @apply flex flex-col justify-center items-center gap-4 p-4 rounded-xl;
+  @apply bg-gradient-to-r from-primary to-secondary;
+  text-align: center;
+}
+
+.contact-card h2 {
+  font-family: 'Outfit';
+  @apply text-3xl font-bold;
+}
+
+.contact-card p {
+  color: black;
 }
 
 .skill-icons {
@@ -69,6 +85,15 @@ section > h2 {
   transform: scale(1.1);
 }
 
-.highlighted-projects {
+.projects-grid {
   @apply grid grid-cols-1;
+}
+
+.reviews {
+  text-align: center;
+}
+
+.reviews h3 {
+  font-family: 'Outfit';
+  @apply font-bold text-3xl w-fit col-span-3 col-start-2;
 }

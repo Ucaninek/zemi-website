@@ -5,8 +5,8 @@ module.exports = { // eslint-disable-line
     theme: {
         extend: {
             colors: {
-                primary: '#E89DFF',
-                secondary: '#B2E8FF',
+                primary: '#CD28FF',
+                secondary: '#37C3FF',
                 background: '#0D1D24'
             }
         },
