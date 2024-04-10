@@ -27,7 +27,11 @@ div:active {
 }
 
 .primary {
-  @apply bg-primary bg-opacity-100;
+  @apply bg-primary;
+}
+
+.primary:active {
+  @apply saturate-150;
 }
 
 .secondary {

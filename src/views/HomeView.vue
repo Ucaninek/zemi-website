@@ -29,6 +29,22 @@ import ShapeEight from '@/components/shapes/ShapeEight.vue'
         foundation, I'm excited to contribute my skills to impactful projects.
       </p>
     </section>
-    <section class="skills"></section>
+    <section class="skills">
+      <h2>My Skills</h2>
+      <div class="skill-icons">
+        <img src="https://skillicons.dev/icons?i=cs" />
+        <img src="https://skillicons.dev/icons?i=visualstudio" />
+        <img src="https://skillicons.dev/icons?i=dotnet" />
+        <img src="https://skillicons.dev/icons?i=python" />
+        <img src="https://skillicons.dev/icons?i=nodejs" />
+        <img src="https://skillicons.dev/icons?i=express" />
+        <img src="https://skillicons.dev/icons?i=html" />
+        <img src="https://skillicons.dev/icons?i=css" />
+        <img src="https://skillicons.dev/icons?i=tailwind" />
+        <img src="https://skillicons.dev/icons?i=js" />
+        <img src="https://skillicons.dev/icons?i=webpack" />
+        <img src="https://skillicons.dev/icons?i=vue" />
+      </div>
+    </section>
   </main>
 </template>

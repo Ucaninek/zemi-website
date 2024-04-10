@@ -26,3 +26,45 @@ let isBurgerOpen = ref(false)
     </div>
   </header>
 </template>
+
+<style scoped>
+.burger {
+  @apply absolute right-0 bg-neutral-300 bg-blend-soft-light rounded-xl flex flex-col gap-8 bg-opacity-10 mx-4 text-white overflow-hidden backdrop-blur-lg;
+  z-index: 2;
+}
+
+.burger p {
+  @apply cursor-pointer;
+}
+
+.burger p svg {
+  display: inline;
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
+.burger p:hover svg {
+  @apply translate-x-1 -translate-y-1;
+}
+
+.burger p:hover {
+  @apply translate-x-2;
+}
+
+.burger-open {
+  @apply w-auto h-auto p-8;
+}
+
+.burger-closed {
+  @apply opacity-0;
+}
+
+.burger-closed p {
+  @apply -translate-y-5;
+}
+
+.outside {
+  @apply w-full h-full fixed;
+  z-index: 1;
+}
+</style>
