@@ -34,7 +34,7 @@ div:active {
   @apply border-2 border-secondary;
 }
 
-.secondary:hover {
+.secondary:active {
   @apply bg-secondary text-black;
 }
 </style>
