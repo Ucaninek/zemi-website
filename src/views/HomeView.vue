@@ -2,6 +2,7 @@
 import PillButton from '@/components/PillButton.vue'
 import ShapeSeven from '@/components/shapes/ShapeSeven.vue'
 import ShapeEight from '@/components/shapes/ShapeEight.vue'
+import ProjectCard from '@/components/ProjectCard.vue'
 </script>
 
 <template>
@@ -30,7 +31,7 @@ import ShapeEight from '@/components/shapes/ShapeEight.vue'
       </p>
     </section>
     <section class="skills">
-      <h2>My Skills</h2>
+      <h2>my skills</h2>
       <div class="skill-icons">
         <img src="https://skillicons.dev/icons?i=cs" />
         <img src="https://skillicons.dev/icons?i=visualstudio" />
@@ -45,6 +46,12 @@ import ShapeEight from '@/components/shapes/ShapeEight.vue'
         <img src="https://skillicons.dev/icons?i=webpack" />
         <img src="https://skillicons.dev/icons?i=vue" />
       </div>
+    </section>
+    <section class="highlighted-projects">
+      <h2>highlighted projects</h2>
+      <ProjectCard title="Hello World"
+        >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
+      >
     </section>
   </main>
 </template>

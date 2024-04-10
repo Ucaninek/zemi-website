@@ -44,7 +44,7 @@ let isBurgerOpen = ref(false)
 }
 
 .burger p:hover svg {
-  @apply translate-x-1 -translate-y-1;
+  @apply -translate-y-1;
 }
 
 .burger p:hover {

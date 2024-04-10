@@ -30,7 +30,7 @@ section .divider {
 
 section .divider h1 {
   font-family: 'Outfit';
-  @apply font-bold text-4xl w-[80%];
+  @apply font-bold text-4xl w-[85%];
 }
 
 section .divider h2 {
@@ -39,7 +39,7 @@ section .divider h2 {
 }
 
 .hero .divider .shape {
-  @apply -rotate-[20deg] w-32 absolute top-0 right-[6vw];
+  @apply -rotate-[10deg] w-32 absolute top-0 right-[6vw];
 }
 
 .section-one .divider .shape {
@@ -51,10 +51,10 @@ section .divider h2 {
   @apply grid grid-cols-4;
 }
 
-.skills h2 {
+section > h2 {
   font-family: 'Outfit';
   letter-spacing: 2px;
-  @apply uppercase font-bold;
+  @apply uppercase font-bold text-lg;
 }
 
 .skill-icons {
@@ -66,5 +66,9 @@ section .divider h2 {
 }
 
 .skill-icons img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+
+.highlighted-projects {
+  @apply grid grid-cols-1;
 }
