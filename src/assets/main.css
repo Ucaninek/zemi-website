@@ -16,39 +16,74 @@ nav p {
   @apply w-1/3 h-1/2 rounded-full absolute;
 }
 
+.section-one {
+  @apply text-right;
+}
+
+.section-one .divider {
+  @apply justify-end;
+}
+
 section {
-  @apply p-6 relative;
+  @apply p-6 sm:p-8 relative;
 }
 
 section {
   @apply w-full flex flex-col gap-4;
 }
 
+.section-one {
+  @apply grid grid-cols-4;
+}
+
 section .divider {
-  @apply w-full flex;
+  @apply w-full flex flex-col;
 }
 
 section .divider h1 {
   font-family: 'Outfit';
-  @apply font-bold text-4xl w-[85%];
+  @apply font-bold text-4xl sm:text-5xl w-[85%];
 }
 
 section .divider h2 {
   font-family: 'Outfit';
-  @apply font-bold text-3xl w-fit col-span-3 col-start-2;
+  @apply font-bold text-3xl sm:text-4xl max-w-[75%] self-end text-right w-full;
+}
+
+@media screen and (min-width: 400px) {
+  .hero .divider .shape {
+    @apply translate-x-8;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .shape {
+    display: none;
+  }
+  section .divider h1 {
+    @apply w-full max-w-full;
+  }
+}
+
+.shape {
+  transform-origin: center;
+}
+
+.shape:hover {
+  @apply scale-105;
 }
 
 .hero .divider .shape {
-  @apply -rotate-[10deg] w-32 absolute top-0 right-[6vw];
+  @apply -rotate-[15deg] w-32 sm:w-44 top-0 right-[2.5rem] absolute;
 }
 
-.section-one .divider .shape {
-  @apply -rotate-[10deg] -translate-y-1 w-32 absolute top-0 left-[1vw];
+.section-one .shape {
+  @apply max-w-36;
 }
 
 .section-one .divider {
   text-align: right;
-  @apply grid grid-cols-4;
+  @apply col-span-3;
 }
 
 section > h2,
@@ -85,6 +120,10 @@ section > h2,
   transform: scale(1.1);
 }
 
+.skill-icons img:active {
+  transform: scale(0.95);
+}
+
 .projects-grid {
   @apply grid grid-cols-1;
 }
@@ -95,5 +134,5 @@ section > h2,
 
 .reviews h3 {
   font-family: 'Outfit';
-  @apply font-bold text-3xl w-fit col-span-3 col-start-2;
+  @apply font-bold text-3xl col-span-3 col-start-2;
 }

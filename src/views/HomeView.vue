@@ -21,31 +21,31 @@ import ReviewCard from '@/components/ReviewCard.vue'
       <PillButton :secondary="true">contact me</PillButton>
     </section>
     <section class="section-one">
+      <ShapeEight class="shape" />
       <div class="divider">
-        <ShapeEight class="shape" />
         <h2>Stepping Up To The Professional Side</h2>
+        <p>
+          After exploring a variety of non-serious projects for learning and experimentation, I'm
+          now eager to shift towards the professional realm. With ample experience and a strong
+          foundation, I'm excited to contribute my skills to impactful projects.
+        </p>
       </div>
-      <p>
-        After exploring a variety of non-serious projects for learning and experimentation, I'm now
-        eager to shift towards the professional realm. With ample experience and a strong
-        foundation, I'm excited to contribute my skills to impactful projects.
-      </p>
     </section>
     <section class="skills">
       <h2>my skills</h2>
       <div class="skill-icons">
-        <img src="https://skillicons.dev/icons?i=cs" />
-        <img src="https://skillicons.dev/icons?i=visualstudio" />
-        <img src="https://skillicons.dev/icons?i=dotnet" />
-        <img src="https://skillicons.dev/icons?i=python" />
-        <img src="https://skillicons.dev/icons?i=nodejs" />
-        <img src="https://skillicons.dev/icons?i=express" />
-        <img src="https://skillicons.dev/icons?i=html" />
-        <img src="https://skillicons.dev/icons?i=css" />
-        <img src="https://skillicons.dev/icons?i=tailwind" />
-        <img src="https://skillicons.dev/icons?i=js" />
-        <img src="https://skillicons.dev/icons?i=webpack" />
-        <img src="https://skillicons.dev/icons?i=vue" />
+        <img alt="C#" src="https://skillicons.dev/icons?i=cs" />
+        <img alt="Visual Studio" src="https://skillicons.dev/icons?i=visualstudio" />
+        <img alt=".NET" src="https://skillicons.dev/icons?i=dotnet" />
+        <img alt="Python" src="https://skillicons.dev/icons?i=python" />
+        <img alt="NodeJS" src="https://skillicons.dev/icons?i=nodejs" />
+        <img alt="Express.js" src="https://skillicons.dev/icons?i=express" />
+        <img alt="HTML" src="https://skillicons.dev/icons?i=html" />
+        <img alt="CSS" src="https://skillicons.dev/icons?i=css" />
+        <img alt="Tailwind CSS" src="https://skillicons.dev/icons?i=tailwind" />
+        <img alt="JavaScript" src="https://skillicons.dev/icons?i=js" />
+        <img alt="Webpack" src="https://skillicons.dev/icons?i=webpack" />
+        <img alt="Vue" src="https://skillicons.dev/icons?i=vue" />
       </div>
     </section>
     <section class="highlighted-projects">

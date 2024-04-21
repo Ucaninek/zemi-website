@@ -9,7 +9,7 @@ let isBurgerOpen = ref(false)
 <template>
   <header>
     <div>
-      <nav class="w-full px-6 py-3 flex justify-between">
+      <nav class="w-full px-6 py-3 sm:px-8 flex justify-between">
         <p class="font-bold text-lg">ZEMI</p>
         <BurgerIcon
           class="cursor-pointer"
@@ -56,7 +56,7 @@ let isBurgerOpen = ref(false)
 }
 
 .burger-closed {
-  @apply opacity-0;
+  @apply opacity-0 pointer-events-none;
 }
 
 .burger-closed p {

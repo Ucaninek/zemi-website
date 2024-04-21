@@ -3,13 +3,12 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueSmoothScroll from 'vue3-smooth-scroll'
+import { createPotiah } from 'potiah'
 
 const app = createApp(App)
+const potiah = createPotiah()
 
 app.use(router)
-app.use(VueSmoothScroll, {
-  duration: 4020
-})
+app.use(potiah)
 
 app.mount('#app')
