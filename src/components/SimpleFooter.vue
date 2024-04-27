@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="mt-auto bg-black bg-opacity-40 backdrop-blur-3xl w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto"
+    class="mt-auto bg-black bg-opacity-40 h-48 backdrop-blur-3xl w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto"
   >
     <!-- Grid -->
     <div class="text-center">

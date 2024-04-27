@@ -7,4 +7,5 @@
 body {
   @apply bg-background text-white;
   font-family: 'Roboto';
+  overflow-x: hidden;
 }

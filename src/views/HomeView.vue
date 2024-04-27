@@ -54,6 +54,12 @@ import ReviewCard from '@/components/ReviewCard.vue'
         <ProjectCard title="Hello World"
           >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
         >
+        <ProjectCard title="Hello World"
+          >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
+        >
+        <ProjectCard title="Hello World"
+          >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
+        >
       </div>
     </section>
     <section class="reviews">
