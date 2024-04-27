@@ -4,7 +4,7 @@
       <p class="font-bold text-lg">ZEMI</p>
       <div class="links flex w-1/2 gap-4 justify-between">
         <p>home</p>
-        <p>projects</p>
+        <p>blog</p>
         <p>contact</p>
       </div>
     </nav>
@@ -14,5 +14,6 @@
 <style scoped>
 nav .links p {
   cursor: pointer;
+  @apply hover:scale-110;
 }
 </style>

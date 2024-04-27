@@ -18,7 +18,7 @@ let isBurgerOpen = ref(false)
     </nav>
     <div class="burger" v-bind:class="isBurgerOpen ? 'burger-open' : 'burger-closed'">
       <p>home<ArrowUpRight /></p>
-      <p>projects<ArrowUpRight /></p>
+      <p>blog<ArrowUpRight /></p>
       <p>contact<ArrowUpRight /></p>
     </div>
     <div class="outside" v-if="isBurgerOpen" @click="isBurgerOpen = false"></div>

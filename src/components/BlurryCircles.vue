@@ -1,12 +1,12 @@
 <template>
   <div class="circle-container">
-    <img src="../assets/circle-scatter-primary.svg" class="blurry-circle a" />
-    <img src="../assets/circle-scatter-secondary.svg" class="blurry-circle b" />
-    <img src="../assets/circle-scatter-primary.svg" class="blurry-circle c" />
-    <img src="../assets/circle-scatter-secondary.svg" class="blurry-circle d" />
-    <img src="../assets/circle-scatter-primary.svg" class="blurry-circle e" />
-    <img src="../assets/circle-scatter-secondary.svg" class="blurry-circle f" />
-    <img src="../assets/circle-scatter-primary.svg" class="blurry-circle g" />
+    <img alt="" src="../assets/circle-scatter-primary.svg" class="blurry-circle a" />
+    <img alt="" src="../assets/circle-scatter-secondary.svg" class="blurry-circle b" />
+    <img alt="" src="../assets/circle-scatter-primary.svg" class="blurry-circle c" />
+    <img alt="" src="../assets/circle-scatter-secondary.svg" class="blurry-circle d" />
+    <img alt="" src="../assets/circle-scatter-primary.svg" class="blurry-circle e" />
+    <img alt="" src="../assets/circle-scatter-secondary.svg" class="blurry-circle f" />
+    <img alt="" src="../assets/circle-scatter-primary.svg" class="blurry-circle g" />
   </div>
 </template>
 

@@ -103,6 +103,10 @@ section .divider h2 {
   @apply flex gap-4 flex-col sm:flex-row;
 }
 
+.hero {
+  @apply mb-4;
+}
+
 .hero .divider .shape {
   @apply w-32 sm:w-44 right-[1.8rem];
 }
@@ -169,6 +173,10 @@ section > h2,
 .reviews h3 {
   font-family: 'Outfit';
   @apply font-bold text-3xl col-span-3 col-start-2;
+}
+
+.call-to-action {
+  @apply hover:saturate-[125%];
 }
 
 .call-to-action h2 {
