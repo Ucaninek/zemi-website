@@ -5,16 +5,18 @@
     <img src="../assets/circle-scatter-primary.svg" class="blurry-circle c" />
     <img src="../assets/circle-scatter-secondary.svg" class="blurry-circle d" />
     <img src="../assets/circle-scatter-primary.svg" class="blurry-circle e" />
+    <img src="../assets/circle-scatter-secondary.svg" class="blurry-circle f" />
+    <img src="../assets/circle-scatter-primary.svg" class="blurry-circle g" />
   </div>
 </template>
 
 <style scoped>
 .circle-container {
-  @apply h-[100vh] w-full absolute blur-3xl top-0 left-0 -z-10;
+  @apply h-[100vh] w-full absolute blur-[100px] top-0 left-0 -z-10;
 }
 
 .blurry-circle {
-  @apply opacity-50 w-1/2 h-1/2 min-w-60 max-w-[20rem] absolute;
+  @apply opacity-50 w-1/2 h-1/2 min-w-64 max-w-[25rem] absolute blur-2xl;
 }
 
 .blurry-circle.a {
@@ -26,14 +28,32 @@
 }
 
 .blurry-circle.c {
-  @apply top-[50rem] left-0;
+  @apply -translate-x-20 top-[50rem] sm:top-[45rem] left-0;
 }
 
 .blurry-circle.d {
-  @apply top-[72rem] right-0;
+  @apply translate-x-20 top-[72rem] sm:top-[64rem] right-0;
 }
 
 .blurry-circle.e {
   @apply top-[100rem] left-0;
+}
+
+.blurry-circle.f {
+  @apply top-[220rem] sm:top-[160rem] left-0 opacity-75 -translate-x-16;
+}
+
+.blurry-circle.g {
+  @apply top-[220rem] sm:top-[160rem] right-0 opacity-75 translate-x-16;
+}
+
+@media screen and (min-width: 530px) and (max-width: 639px) {
+  .blurry-circle.f {
+    @apply top-[160rem] !important;
+  }
+
+  .blurry-circle.g {
+    @apply top-[160rem] !important;
+  }
 }
 </style>

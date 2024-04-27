@@ -56,9 +56,15 @@ section .divider h2 {
   }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 639px) {
+@media only screen and (min-width: 530px) and (max-width: 639px) {
   .skill-icons {
-    @apply grid-cols-5 !important;
+    @apply grid-cols-6 !important;
+  }
+  .projects-grid {
+    @apply grid-cols-2 !important;
+  }
+  .review-container {
+    @apply grid-cols-2 !important;
   }
 }
 
@@ -91,6 +97,10 @@ section .divider h2 {
 
 .shape:hover {
   @apply scale-105;
+}
+
+.button-container {
+  @apply flex gap-4 flex-col sm:flex-row;
 }
 
 .hero .divider .shape {
@@ -128,7 +138,7 @@ section > h2,
 }
 
 .skill-icons {
-  @apply bg-white bg-opacity-10 rounded-xl backdrop-blur-lg p-4 grid grid-cols-4 sm:grid-cols-6 gap-4;
+  @apply bg-white bg-opacity-10 rounded-xl backdrop-blur-lg p-4 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-4;
 }
 
 .skill-icons img {
@@ -151,7 +161,26 @@ section > h2,
   text-align: center;
 }
 
+.review-container {
+  text-align: center;
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+}
+
 .reviews h3 {
   font-family: 'Outfit';
   @apply font-bold text-3xl col-span-3 col-start-2;
+}
+
+.call-to-action h2 {
+  @apply max-w-96;
+}
+
+.shape-seven-container {
+  @apply w-12 h-12;
+  background-image: url('./shapes/ShapeSeven.svg');
+  background-repeat: no-repeat;
+}
+
+.shape-seven-container img {
+  filter: blur(15px) saturate(3);
 }

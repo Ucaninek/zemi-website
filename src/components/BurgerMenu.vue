@@ -7,29 +7,27 @@ let isBurgerOpen = ref(false)
 </script>
 
 <template>
-  <header>
-    <div>
-      <nav class="px-6 py-3 sm:px-8 flex justify-between">
-        <p class="font-bold text-lg">ZEMI</p>
-        <BurgerIcon
-          class="cursor-pointer"
-          v-bind:class="isBurgerOpen ? 'close' : ''"
-          @click="isBurgerOpen = !isBurgerOpen"
-        />
-      </nav>
-      <div class="burger" v-bind:class="isBurgerOpen ? 'burger-open' : 'burger-closed'">
-        <p>home<ArrowUpRight /></p>
-        <p>projects<ArrowUpRight /></p>
-        <p>contact<ArrowUpRight /></p>
-      </div>
-      <div class="outside" v-if="isBurgerOpen" @click="isBurgerOpen = false"></div>
+  <div>
+    <nav class="px-6 py-3 sm:px-8 flex justify-between">
+      <p class="font-bold text-lg">ZEMI</p>
+      <BurgerIcon
+        class="cursor-pointer"
+        v-bind:class="isBurgerOpen ? 'close' : ''"
+        @click="isBurgerOpen = !isBurgerOpen"
+      />
+    </nav>
+    <div class="burger" v-bind:class="isBurgerOpen ? 'burger-open' : 'burger-closed'">
+      <p>home<ArrowUpRight /></p>
+      <p>projects<ArrowUpRight /></p>
+      <p>contact<ArrowUpRight /></p>
     </div>
-  </header>
+    <div class="outside" v-if="isBurgerOpen" @click="isBurgerOpen = false"></div>
+  </div>
 </template>
 
 <style scoped>
 .burger {
-  @apply absolute right-0 bg-neutral-300 bg-blend-soft-light rounded-xl flex flex-col gap-8 bg-opacity-10 mx-4 text-white overflow-hidden backdrop-blur-lg;
+  @apply absolute right-0 bg-neutral-400 bg-blend-soft-light rounded-xl flex flex-col gap-8 bg-opacity-10 mx-4 text-white overflow-hidden backdrop-blur-xl;
   z-index: 2;
 }
 

@@ -17,8 +17,10 @@ import ReviewCard from '@/components/ReviewCard.vue'
         I'm Zemi, a high school programmer driven by a lifelong passion for crafting digital
         solutions.
       </p>
-      <PillButton :primary="true">learn more</PillButton>
-      <PillButton :secondary="true">contact me</PillButton>
+      <div class="button-container">
+        <PillButton :primary="true">learn more</PillButton>
+        <PillButton :secondary="true">contact me</PillButton>
+      </div>
     </section>
     <section class="section-one">
       <ShapeEight class="shape" />
@@ -26,7 +28,7 @@ import ReviewCard from '@/components/ReviewCard.vue'
         <h2>Stepping Up To The Professional Side</h2>
         <p>
           After exploring a variety of non-serious projects for learning and experimentation, I'm
-          now eager to shift towards the professional realm. With ample experience and a strong
+          now eager to shift towards the professional realm. With plenty of experience and a strong
           foundation, I'm excited to contribute my skills to impactful projects.
         </p>
       </div>
@@ -65,10 +67,20 @@ import ReviewCard from '@/components/ReviewCard.vue'
     <section class="reviews">
       <h2>reviews</h2>
       <h3>Read What Others Have To Say</h3>
-      <ReviewCard author="Wheatley"
-        >I wish I could take it all back. I honestly do. I honestly do wish I could take it all
-        back. And not just 'cause I'm stranded in space.</ReviewCard
-      >
+      <div class="review-container">
+        <ReviewCard author="Wheatley"
+          >I wish I could take it all back. I honestly do. I honestly do wish I could take it all
+          back. And not just 'cause I'm stranded in space.</ReviewCard
+        >
+        <ReviewCard author="Wheatley"
+          >I wish I could take it all back. I honestly do. I honestly do wish I could take it all
+          back. And not just 'cause I'm stranded in space.</ReviewCard
+        >
+        <ReviewCard author="Wheatley"
+          >I wish I could take it all back. I honestly do. I honestly do wish I could take it all
+          back. And not just 'cause I'm stranded in space.</ReviewCard
+        >
+      </div>
     </section>
     <section class="call-to-action">
       <div class="contact-card">
