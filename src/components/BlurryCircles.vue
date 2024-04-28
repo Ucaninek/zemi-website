@@ -12,11 +12,11 @@
 
 <style scoped>
 .circle-container {
-  @apply h-[100vh] w-full absolute blur-[100px] top-0 left-0 -z-10;
+  @apply h-[100vh] w-full absolute blur-[100px] top-0 left-0 -z-10 overflow-x-clip;
 }
 
 .blurry-circle {
-  @apply opacity-50 w-1/2 h-1/2 min-w-64 max-w-[25rem] absolute blur-2xl;
+  @apply w-1/2 h-1/2 min-w-64 max-w-[25rem] absolute blur-2xl;
 }
 
 .blurry-circle.a {
@@ -40,11 +40,11 @@
 }
 
 .blurry-circle.f {
-  @apply top-[220rem] sm:top-[160rem] left-0 opacity-75 -translate-x-16;
+  @apply top-[210rem] sm:top-[160rem] lg:top-[120rem] left-0 opacity-75 -translate-x-16;
 }
 
 .blurry-circle.g {
-  @apply top-[220rem] sm:top-[160rem] right-0 opacity-75 translate-x-16;
+  @apply top-[210rem] sm:top-[160rem] lg:top-[120rem] right-0 opacity-75 translate-x-16;
 }
 
 @media screen and (min-width: 530px) and (max-width: 639px) {
