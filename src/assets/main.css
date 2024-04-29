@@ -109,7 +109,13 @@ section .divider h2 {
 
 .hero .divider .shape {
   @apply w-32 sm:w-44;
-  left: calc(75% - 1.8rem);
+  left: calc(100% - 9.5rem);
+}
+
+@media screen and (min-width: 405px) and (max-width: 446px) {
+  .hero .divider .shape {
+    left: calc(100% - 7rem);
+  }
 }
 
 .section-one .shape {
@@ -129,8 +135,11 @@ section > h2,
 
 .contact-card {
   @apply flex flex-col justify-center items-center gap-4 p-4 rounded-xl;
-  @apply bg-gradient-to-r from-primary to-secondary;
+  @apply bg-gradient-to-r to-primary from-secondary;
   text-align: center;
+}
+.call-to-action .inner {
+  @apply absolute opacity-50 top-0 left-0 w-full h-full bg-gradient-to-r to-primary from-secondary rounded-xl blur-3xl -z-10;
 }
 
 .contact-card h2 {
@@ -185,5 +194,5 @@ section > h2,
 }
 
 .call-to-action h2 {
-  @apply max-w-96;
+  @apply max-w-96 relative;
 }

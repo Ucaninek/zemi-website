@@ -7,7 +7,7 @@ module.exports = { // eslint-disable-line
             colors: {
                 primary: '#CD28FF',
                 secondary: '#37C3FF',
-                background: '#0D1D24'
+                background: '#140d24'
             }
         },
     },

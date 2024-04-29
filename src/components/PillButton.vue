@@ -15,6 +15,7 @@ div {
   font-family: 'Outfit';
   letter-spacing: 2px;
   user-select: none;
+  cursor: pointer;
   @apply uppercase font-semibold bg-black;
 }
 
@@ -28,10 +29,6 @@ div:active {
 
 .primary {
   @apply bg-primary;
-}
-
-.primary:active {
-  @apply saturate-150;
 }
 
 .secondary {

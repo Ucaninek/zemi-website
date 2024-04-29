@@ -83,6 +83,7 @@ import ReviewCard from '@/components/ReviewCard.vue'
       </div>
     </section>
     <section class="call-to-action">
+      <div class="inner"></div>
       <div class="contact-card">
         <p>ready to turn ideas into reality?</p>
         <h2>Let's Stop Scrolling And Start Creating</h2>

@@ -2,21 +2,16 @@
   <div class="circle-container">
     <img alt="" src="../assets/circle-scatter-primary.svg" class="blurry-circle a" />
     <img alt="" src="../assets/circle-scatter-secondary.svg" class="blurry-circle b" />
-    <img alt="" src="../assets/circle-scatter-primary.svg" class="blurry-circle c" />
-    <img alt="" src="../assets/circle-scatter-secondary.svg" class="blurry-circle d" />
-    <img alt="" src="../assets/circle-scatter-primary.svg" class="blurry-circle e" />
-    <img alt="" src="../assets/circle-scatter-secondary.svg" class="blurry-circle f" />
-    <img alt="" src="../assets/circle-scatter-primary.svg" class="blurry-circle g" />
   </div>
 </template>
 
 <style scoped>
 .circle-container {
-  @apply h-[100vh] w-full absolute blur-[100px] top-0 left-0 -z-10 overflow-x-clip;
+  @apply h-full opacity-60 w-full fixed blur-[100px] top-0 left-0 -z-10;
 }
 
 .blurry-circle {
-  @apply w-1/2 h-1/2 min-w-64 max-w-[25rem] absolute blur-2xl;
+  @apply w-1/2 h-1/2 min-w-64 max-w-[25rem] absolute blur-[100px];
 }
 
 .blurry-circle.a {
