@@ -108,8 +108,26 @@ section .divider h2 {
 }
 
 .hero .divider .shape {
-  @apply w-32 sm:w-44;
+  @apply w-32 sm:w-44 sm:-translate-x-[40%];
   left: calc(100% - 9.5rem);
+}
+
+@media screen and (min-width: 970px) and (max-width: 1023px) {
+  .hero .divider .shape {
+    @apply rotate-12;
+  }
+}
+
+@media screen and (min-width: 749px) and (max-width: 820px) {
+  .hero .divider .shape {
+    @apply -translate-x-[20%];
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  .hero .divider .shape {
+    left: calc(100% - 11rem);
+  }
 }
 
 @media screen and (min-width: 405px) and (max-width: 446px) {
