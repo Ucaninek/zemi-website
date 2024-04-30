@@ -14,7 +14,7 @@ defineProps(['src', 'title', 'desc'])
 
 <style scoped>
 .project-card {
-  @apply bg-white bg-opacity-10 flex flex-col gap-4 rounded-xl;
+  @apply bg-white bg-opacity-10 flex flex-col gap-4 rounded-xl hover:scale-95 shadow-2xl hover:shadow-sm;
 }
 
 .project-card img {

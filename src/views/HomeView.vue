@@ -4,6 +4,23 @@ import ShapeSeven from '@/components/shapes/ShapeSeven.vue'
 import ShapeEight from '@/components/shapes/ShapeEight.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
 import ReviewCard from '@/components/ReviewCard.vue'
+
+import { ref, onMounted, onUnmounted } from 'vue'
+import ShapeTwelve from '@/components/shapes/ShapeTwelve.vue'
+
+var windowWidth = ref(window.innerWidth)
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <template>
@@ -24,6 +41,7 @@ import ReviewCard from '@/components/ReviewCard.vue'
     </section>
     <section class="section-one">
       <ShapeEight class="shape" />
+      <ShapeTwelve v-show="windowWidth >= 1024" class="second shape" />
       <div class="divider">
         <h2>Stepping Up To The Professional Side</h2>
         <p>
