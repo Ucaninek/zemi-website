@@ -4,7 +4,7 @@ defineProps(['src', 'author', 'content'])
 
 <template>
   <div class="review-card">
-    <img src="../assets/wheatley.png" />
+    <img :src="src" />
     <span>{{ author }}</span>
     <p><slot></slot></p>
   </div>

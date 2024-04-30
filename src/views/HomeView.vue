@@ -73,16 +73,16 @@ onUnmounted(() => {
     <section class="highlighted-projects">
       <h2>highlighted projects</h2>
       <div class="projects-grid">
-        <ProjectCard title="Hello World"
+        <ProjectCard title="Hello World" src="https://placehold.co/600x400"
           >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
         >
-        <ProjectCard title="Hello World"
+        <ProjectCard title="Hello World" src="https://placehold.co/600x400"
           >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
         >
-        <ProjectCard title="Hello World"
+        <ProjectCard title="Hello World" src="https://placehold.co/600x400"
           >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
         >
-        <ProjectCard title="Hello World"
+        <ProjectCard title="Hello World" src="https://placehold.co/600x400"
           >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
         >
       </div>
@@ -91,15 +91,15 @@ onUnmounted(() => {
       <h2>reviews</h2>
       <h3>Read What Others Have To Say</h3>
       <div class="review-container">
-        <ReviewCard author="Wheatley"
+        <ReviewCard author="Wheatley" src="src\assets\wheatley.png"
           >I wish I could take it all back. I honestly do. I honestly do wish I could take it all
           back. And not just 'cause I'm stranded in space.</ReviewCard
         >
-        <ReviewCard author="Wheatley"
+        <ReviewCard author="Wheatley" src="src\assets\wheatley.png"
           >I wish I could take it all back. I honestly do. I honestly do wish I could take it all
           back. And not just 'cause I'm stranded in space.</ReviewCard
         >
-        <ReviewCard author="Wheatley"
+        <ReviewCard author="Wheatley" src="src\assets\wheatley.png"
           >I wish I could take it all back. I honestly do. I honestly do wish I could take it all
           back. And not just 'cause I'm stranded in space.</ReviewCard
         >

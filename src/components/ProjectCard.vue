@@ -4,7 +4,7 @@ defineProps(['src', 'title', 'desc'])
 
 <template>
   <div class="project-card">
-    <img src="https://placehold.co/600x400" />
+    <img :src="src" />
     <div>
       <h3>{{ title }}</h3>
       <p><slot></slot></p>
