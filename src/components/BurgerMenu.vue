@@ -8,7 +8,7 @@ let isBurgerOpen = ref(false)
 
 <template>
   <div>
-    <nav class="px-6 py-3 sm:px-8 flex justify-between">
+    <nav class="px-6 py-3 lg:py-5 sm:px-8 flex justify-between">
       <p class="font-bold text-lg">ZEMI</p>
       <BurgerIcon
         class="cursor-pointer"

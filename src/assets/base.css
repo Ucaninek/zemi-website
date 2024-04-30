@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background text-white;
+  @apply bg-background text-white lg:text-lg flex justify-center;
   font-family: 'Roboto';
 }
 

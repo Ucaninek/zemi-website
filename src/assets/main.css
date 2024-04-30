@@ -25,7 +25,7 @@ nav p {
 }
 
 section {
-  @apply p-6 sm:p-8 lg:p-12 relative;
+  @apply p-6 sm:p-8 lg:p-12 xl:w-[90vw] xl:max-w-[1500px] relative;
 }
 
 section {
@@ -36,14 +36,14 @@ section .divider {
   @apply w-full flex flex-col gap-4 lg:gap-6;
 }
 
-section .divider h1 {
+.hero .divider h1 {
   font-family: 'Outfit';
-  @apply font-bold text-4xl sm:text-5xl lg:text-6xl w-[85%];
+  @apply font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl w-[85%] lg:w-[70%] mb-4;
 }
 
-section .divider h2 {
+.section-one .divider h2 {
   font-family: 'Outfit';
-  @apply font-bold text-3xl sm:text-4xl lg:text-5xl max-w-[75%] lg:max-w-[55%] self-end text-right w-full;
+  @apply font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl max-w-[75%] lg:max-w-[55%] self-end text-right w-full;
 }
 
 .section-one .divider p {
@@ -144,16 +144,36 @@ section .divider h2 {
   @apply -translate-y-20 left-[40%];
 }
 
+.hero .shape.second {
+  @apply translate-y-10 left-[60%] xl:left-[65%];
+}
+
+@media screen and (min-width: 1136px) and (max-width: 1195px) {
+  .hero .shape.second {
+    @apply translate-y-20 -translate-x-36;
+  }
+}
+
+@media screen and (min-width: 1196px) and (max-width: 1279px) {
+  .hero .shape.second {
+    @apply translate-x-0;
+  }
+  .hero .divider h1 {
+    font-family: 'Outfit';
+    @apply w-[65%];
+  }
+}
+
 .section-one .divider {
   text-align: right;
 }
 
 .skill-icons {
-  @apply bg-white bg-opacity-10 rounded-xl backdrop-blur-lg p-4 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10  shadow-2xl gap-4 lg:gap-6;
+  @apply bg-white bg-opacity-10 rounded-xl backdrop-blur-lg p-4 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 shadow-2xl gap-4 lg:gap-6;
 }
 
 .skill-icons img {
-  @apply min-w-8 w-full max-w-20;
+  @apply min-w-8 w-full max-w-20 xl:max-w-24;
 }
 
 .skill-icons img:hover {
@@ -165,7 +185,7 @@ section .divider h2 {
 }
 
 .projects-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6;
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6;
 }
 
 .reviews {
@@ -174,7 +194,7 @@ section .divider h2 {
 
 .review-container {
   text-align: center;
-  @apply grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6;
+  @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6;
 }
 
 .review-container div {
@@ -183,7 +203,7 @@ section .divider h2 {
 
 .reviews h3 {
   font-family: 'Outfit';
-  @apply font-bold text-3xl col-span-3 col-start-2;
+  @apply font-bold text-3xl xl:text-4xl col-span-3 col-start-2;
 }
 
 .call-to-action h2 {
@@ -194,15 +214,19 @@ section .divider h2 {
   @apply absolute opacity-50 top-0 left-0 w-full h-full bg-gradient-to-r to-primary from-secondary rounded-xl blur-3xl -z-10;
 }
 
+.center {
+  @apply w-full flex justify-center;
+}
+
 section > h2,
 .contact-card p {
   font-family: 'Outfit';
   letter-spacing: 2px;
-  @apply uppercase font-bold text-lg;
+  @apply uppercase font-bold text-lg xl:text-xl;
 }
 
 .contact-card {
-  @apply flex flex-col justify-center items-center gap-4 lg:gap-6 p-4 rounded-xl;
+  @apply flex flex-col justify-center items-center gap-4 lg:gap-6 p-4 rounded-xl grow;
   @apply bg-gradient-to-r to-primary from-secondary shadow-inner;
   text-align: center;
 }

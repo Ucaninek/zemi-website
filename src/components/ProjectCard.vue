@@ -23,7 +23,7 @@ defineProps(['src', 'title', 'desc'])
 
 .project-card h3 {
   font-family: 'Outfit';
-  @apply text-2xl font-bold;
+  @apply text-2xl xl:text-3xl font-bold;
 }
 
 .project-card div {

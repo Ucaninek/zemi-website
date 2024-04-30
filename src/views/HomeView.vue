@@ -7,6 +7,7 @@ import ReviewCard from '@/components/ReviewCard.vue'
 
 import { ref, onMounted, onUnmounted } from 'vue'
 import ShapeTwelve from '@/components/shapes/ShapeTwelve.vue'
+import ShapeSix from '@/components/shapes/ShapeSix.vue'
 
 var windowWidth = ref(window.innerWidth)
 
@@ -29,6 +30,7 @@ onUnmounted(() => {
       <div class="divider">
         <h1>High School Coder Turning Dreams Into Digital Realites</h1>
         <ShapeSeven class="shape" />
+        <ShapeSix v-show="windowWidth >= 1024" class="second shape" />
       </div>
       <p>
         I'm Zemi, a high school programmer driven by a lifelong passion for crafting digital
@@ -80,6 +82,9 @@ onUnmounted(() => {
         <ProjectCard title="Hello World"
           >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
         >
+        <ProjectCard title="Hello World"
+          >hello guys its me flying gorilla welcome back to my flying gorilla simulator</ProjectCard
+        >
       </div>
     </section>
     <section class="reviews">
@@ -102,10 +107,12 @@ onUnmounted(() => {
     </section>
     <section class="call-to-action">
       <div class="inner"></div>
-      <div class="contact-card">
-        <p>ready to turn ideas into reality?</p>
-        <h2>Let's Stop Scrolling And Start Creating</h2>
-        <PillButton>contact me</PillButton>
+      <div class="center">
+        <div class="contact-card">
+          <p>ready to turn ideas into reality?</p>
+          <h2>Let's Stop Scrolling And Start Creating</h2>
+          <PillButton>contact me</PillButton>
+        </div>
       </div>
     </section>
   </main>
