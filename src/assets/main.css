@@ -141,7 +141,7 @@ section .divider {
 }
 
 .section-one .shape.second {
-  @apply -translate-y-20 left-[40%];
+  @apply -translate-y-[5.5rem] -translate-x-2 left-[40%];
 }
 
 .hero .shape.second {
