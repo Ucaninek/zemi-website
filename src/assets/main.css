@@ -33,15 +33,6 @@ section h2 {
   font-family: 'Outfit';
 }
 
-@media only screen and (min-width: 530px) and (max-width: 639px) {
-  .projects-grid {
-    @apply grid-cols-2 !important;
-  }
-  .review-container {
-    @apply grid-cols-2 !important;
-  }
-}
-
 @media screen and (max-width: 370px) {
   .shape {
     display: none;
@@ -63,36 +54,6 @@ section h2 {
 
 .button-container {
   @apply flex gap-4 lg:gap-6 flex-col sm:flex-row;
-}
-
-.projects-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6;
-}
-
-.reviews {
-  text-align: center;
-}
-
-.review-container {
-  text-align: center;
-  @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6;
-}
-
-.review-container div {
-  @apply hover:scale-95 shadow-2xl hover:shadow-sm;
-}
-
-.reviews h3 {
-  font-family: 'Outfit';
-  @apply font-bold text-3xl xl:text-4xl col-span-3 col-start-2;
-}
-
-.call-to-action h2 {
-  @apply max-w-96 relative;
-}
-
-.call-to-action .inner {
-  @apply absolute opacity-50 top-0 left-0 w-full h-full bg-gradient-to-r to-primary from-secondary rounded-xl blur-3xl -z-10;
 }
 
 .center {
