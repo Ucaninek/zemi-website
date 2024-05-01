@@ -9,6 +9,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import ShapeTwelve from '@/components/shapes/ShapeTwelve.vue'
 import ShapeSix from '@/components/shapes/ShapeSix.vue'
 
+import { ScrollComponent } from 'potiah'
+
 var windowWidth = ref(window.innerWidth)
 
 const handleResize = () => {

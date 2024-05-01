@@ -7,7 +7,7 @@
 
 <style scoped>
 .circle-container {
-  @apply h-full opacity-60 w-full fixed blur-[100px] top-0 left-0 -z-10;
+  @apply h-full opacity-60 w-full fixed top-0 left-0 -z-10 blur-[100px];
 }
 
 .blurry-circle {

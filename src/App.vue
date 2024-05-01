@@ -8,7 +8,7 @@ import SimpleFooter from './components/SimpleFooter.vue'
 </script>
 
 <template>
-  <ScrollView root>
+  <ScrollView root :duration="1.5">
     <SmartNavigation />
     <RouterView />
     <BlurryCircles />
