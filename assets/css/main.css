@@ -1,0 +1,83 @@
+@import "./base.css";
+
+* {
+	transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+nav p {
+	font-family: "Outfit";
+}
+
+.blurry {
+	filter: blur(100px);
+}
+
+.circle {
+	@apply w-1/3 h-1/2 rounded-full absolute;
+}
+
+section {
+	@apply p-6 sm:p-8 lg:p-12 xl:w-[90vw] xl:max-w-[1500px] relative;
+}
+
+section {
+	@apply flex flex-col gap-4 lg:gap-6;
+}
+
+section .divider {
+	@apply w-full flex flex-col gap-4 lg:gap-6;
+}
+
+section h1,
+section h2 {
+	font-family: "Outfit";
+}
+
+@media screen and (max-width: 370px) {
+	.shape {
+		display: none;
+	}
+}
+
+* {
+	@apply bg-blend-exclusion;
+}
+
+.shape {
+	transform-origin: center;
+	@apply absolute -rotate-[15deg] w-32 sm:w-44 top-0;
+}
+
+.shape:hover {
+	@apply scale-105;
+}
+
+.button-container {
+	@apply flex gap-4 lg:gap-6 flex-col sm:flex-row;
+}
+
+.center {
+	@apply w-full flex justify-center;
+}
+
+section > h2,
+.contact-card p {
+	font-family: "Outfit";
+	letter-spacing: 2px;
+	@apply uppercase font-bold text-lg xl:text-xl;
+}
+
+.contact-card {
+	@apply flex flex-col justify-center items-center gap-4 lg:gap-6 p-4 rounded-xl grow;
+	@apply bg-gradient-to-r to-primary from-secondary shadow-inner;
+	text-align: center;
+}
+
+.contact-card h2 {
+	font-family: "Outfit";
+	@apply text-3xl font-bold;
+}
+
+.contact-card p {
+	color: black;
+}

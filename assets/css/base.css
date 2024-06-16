@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer utilities {
+	.adaptive-h1 {
+		@apply text-3xl sm:text-4xl lg:text-5xl xl:text-6xl;
+	}
+
+	.adaptive-h2 {
+		@apply text-3xl sm:text-4xl lg:text-5xl xl:text-6xl;
+	}
+}
+
+body {
+	@apply bg-background text-white lg:text-lg flex justify-center;
+	font-family: "Roboto";
+}
+
+::selection {
+	color: black;
+	background: hsl(198, 100%, 61%);
+}
