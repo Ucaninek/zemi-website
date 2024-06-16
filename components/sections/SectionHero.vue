@@ -16,8 +16,7 @@ const { windowWidth } = useWindowResize()
       <ShapeSix v-show="windowWidth >= 1024" class="second shape" />
     </div>
     <p>
-      I'm Zemi, a high school programmer driven by a lifelong passion for crafting digital
-      solutions.
+      {{ windowWidth }}
     </p>
     <div class="button-container">
       <PillButton :primary="true">learn more</PillButton>

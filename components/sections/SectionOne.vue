@@ -31,7 +31,7 @@ const { windowWidth } = useWindowResize()
 }
 
 h2 {
-  @apply font-bold max-w-[75%] lg:max-w-[55%] self-end w-full;
+  @apply font-bold adaptive-h2 max-w-[75%] lg:max-w-[55%] self-end w-full;
 }
 
 p {
