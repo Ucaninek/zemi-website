@@ -2,10 +2,7 @@
 defineProps(['primary', 'secondary'])
 </script>
 <template>
-  <div
-    v-bind:class="primary ? 'primary' : secondary ? 'secondary' : ''"
-    class="w-fit py-3 px-6 rounded-full"
-  >
+  <div v-bind:class="primary ? 'primary' : secondary ? 'secondary' : ''" class="w-fit py-3 px-6 rounded-full">
     <slot></slot>
   </div>
 </template>

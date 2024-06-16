@@ -2,18 +2,18 @@
   <section class="skills">
     <h2>my skills</h2>
     <div class="skill-icons">
-      <img alt="C#" src="https://skillicons.dev/icons?light=true&i=cs" />
-      <img alt="Visual Studio" src="https://skillicons.dev/icons?light=true&i=visualstudio" />
-      <img alt=".NET" src="https://skillicons.dev/icons?light=true&i=dotnet" />
-      <img alt="Python" src="https://skillicons.dev/icons?light=true&i=python" />
-      <img alt="NodeJS" src="https://skillicons.dev/icons?light=true&i=nodejs" />
-      <img alt="Express.js" src="https://skillicons.dev/icons?light=true&i=express" />
-      <img alt="HTML" src="https://skillicons.dev/icons?light=true&i=html" />
-      <img alt="CSS" src="https://skillicons.dev/icons?light=true&i=css" />
-      <img alt="Tailwind CSS" src="https://skillicons.dev/icons?light=true&i=tailwind" />
-      <img alt="JavaScript" src="https://skillicons.dev/icons?light=true&i=js" />
-      <img alt="Webpack" src="https://skillicons.dev/icons?light=true&i=webpack" />
-      <img alt="Vue" src="https://skillicons.dev/icons?light=true&i=vue" />
+      <img alt="C#" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=cs" />
+      <img alt="Visual Studio" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=visualstudio" />
+      <img alt=".NET" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=dotnet" />
+      <img alt="Python" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=python" />
+      <img alt="NodeJS" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=nodejs" />
+      <img alt="Express.js" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=express" />
+      <img alt="HTML" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=html" />
+      <img alt="CSS" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=css" />
+      <img alt="Tailwind CSS" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=tailwind" />
+      <img alt="JavaScript" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=js" />
+      <img alt="Webpack" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=webpack" />
+      <img alt="Vue" src="https://go-skill-icons.vercel.app/api/icons?theme=light&i=vue" />
     </div>
   </section>
 </template>
