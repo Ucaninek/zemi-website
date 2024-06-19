@@ -5,7 +5,7 @@ export default function useWindowResize() {
 
     onMounted(() => {
         window.addEventListener('resize', update)
-        update()
+        update() //prevent initial value from being 0
     })
 
     onUnmounted(() => {
