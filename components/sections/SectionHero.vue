@@ -9,18 +9,20 @@ const { windowWidth } = useWindowResize()
 </script>
 
 <template>
-  <section class="hero">
-    <div class="divider">
-      <h1>High School Coder Turning Dreams Into Digital Realites</h1>
-      <ShapeSeven class="shape" />
-      <ShapeSix v-show="windowWidth >= 1024" class="second shape" />
-    </div>
-    <p>
-      {{ windowWidth }}
-    </p>
-    <div class="button-container">
-      <PillButton :primary="true">learn more</PillButton>
-      <PillButton :secondary="true">contact me</PillButton>
+  <section class="hero w-[100vw] h-[100vh]">
+    <div>
+      <div class="divider">
+        <h1>High School Coder Turning Dreams Into Digital Realites</h1>
+        <ShapeSeven class="shape" />
+        <ShapeSix v-show="windowWidth >= 1024" class="second shape" />
+      </div>
+      <p>
+        I'm Zemi, a high school programmer driven by a lifelong passion for crafting digital solutions.
+      </p>
+      <div class="button-container">
+        <PillButton :primary="true">learn more</PillButton>
+        <PillButton :secondary="true">contact me</PillButton>
+      </div>
     </div>
   </section>
 </template>
