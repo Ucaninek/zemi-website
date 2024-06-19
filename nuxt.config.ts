@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
+  devtools: { enabled: false },
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
   tailwindcss: {
     cssPath: 'assets/css/base.css',
     config: {
@@ -10,7 +10,7 @@ export default defineNuxtConfig({
           colors: {
               primary: '#CD28FF',
               secondary: '#37C3FF',
-              background: '#140d24'
+              background: '#fff'
           }
         }
       }
