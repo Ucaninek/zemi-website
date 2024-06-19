@@ -13,7 +13,7 @@ div {
   letter-spacing: 2px;
   user-select: none;
   cursor: pointer;
-  @apply uppercase font-semibold bg-black;
+  @apply uppercase font-semibold bg-black text-white;
 }
 
 div:hover {
@@ -29,10 +29,10 @@ div:active {
 }
 
 .secondary {
-  @apply border-2 border-secondary bg-transparent;
+  @apply border-2 border-secondary bg-transparent text-black dark:text-white;
 }
 
 .secondary:active {
-  @apply bg-secondary text-black;
+  @apply bg-secondary text-white dark:text-black;
 }
 </style>

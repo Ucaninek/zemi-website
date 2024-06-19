@@ -5,12 +5,13 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: 'assets/css/base.css',
     config: {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
               primary: '#CD28FF',
               secondary: '#37C3FF',
-              background: '#fff'
+              background: '#140d24'
           }
         }
       }
