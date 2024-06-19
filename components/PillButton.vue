@@ -25,7 +25,7 @@ div:active {
 }
 
 .primary {
-  @apply bg-primary;
+  @apply bg-primary active:saturate-150;
 }
 
 .secondary {

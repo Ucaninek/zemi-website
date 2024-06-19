@@ -32,7 +32,7 @@ import Wheatley from '~/assets/wheatley.png';
 }
 
 .review-container div {
-  @apply hover:scale-95 shadow-2xl hover:shadow-sm;
+  @apply hover:scale-105 hover:-translate-y-6 shadow-xl hover:shadow-2xl;
 }
 
 .reviews h3 {
