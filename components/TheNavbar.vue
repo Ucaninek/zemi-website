@@ -6,6 +6,7 @@
         <p>home</p>
         <p>blog</p>
         <p>contact</p>
+        <DarkModeToggle />
       </div>
     </nav>
   </div>
