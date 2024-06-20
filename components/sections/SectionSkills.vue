@@ -24,7 +24,7 @@
 }
 
 .skill-icons img {
-  @apply min-w-8 w-full rounded-[1.1rem] max-w-20 xl:max-w-24 hover:scale-105 hover:-translate-y-3 shadow-xl hover:shadow-2xl;
+  @apply min-w-8 w-full rounded-[1.3rem] max-w-20 xl:max-w-24 hover:scale-105 hover:-translate-y-3 shadow-xl hover:shadow-2xl;
 }
 
 
